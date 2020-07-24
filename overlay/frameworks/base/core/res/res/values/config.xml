@@ -646,9 +646,14 @@
         <item>13</item>
     </integer-array>
 
-    <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-    <integer name="config_defaultRefreshRateInZone">90</integer>
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/fastchg_status</string>
+
+    <!-- The default peak refresh rate for a given device. Change this value if you want to allow
+         for higher refresh rates to be automatically used out of the box -->
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
 </resources>
